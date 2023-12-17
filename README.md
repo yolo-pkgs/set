@@ -1,6 +1,8 @@
 # set
 
-Because I can, that's why. And no, it's not thread-safe
+Because I can, that's why. And no, it's not thread-safe.
+
+Docs: <https://pkg.go.dev/github.com/yolo-pkgs/set>
 
 ```go
 package main
