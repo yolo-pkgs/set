@@ -40,8 +40,10 @@ func (s Set[T]) Equal(other Set[T]) bool {
 	return true
 }
 
-func (s Set[T]) Add(v T) {
-	s[v] = struct{}{}
+func (s Set[T]) Add(v ...T) {
+	for _, val := range v {
+		s[val] = struct{}{}
+	}
 }
 
 func (s Set[T]) Pop() (v T, ok bool) {
